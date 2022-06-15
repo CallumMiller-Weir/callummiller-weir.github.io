@@ -53,74 +53,10 @@
                 font-family: DroidSerif;
             }
 
-            .timeline {
-                position: relative;
-                margin: 0 auto;
-                width: 100%;
-                margin-left: 5px;
-                margin-right: 5px;
-            }
-
-            .timeline::after {
-                content: '';
-                width: 5px;
-                height: inherit;
-                background: white;
-                position: absolute;
-                top: 0;
-                left: 0;
-            }
-
-            .timeline-point {
-                margin-left: 5%;
-                margin-right: 5%;
-                width: 100%;
-            }
-
-            .timeline-indent-l1 {
-                margin-left: 2%;
-                margin-right: 2%;
-            }
-
-            .timeline-indent-l2 {
-                margin-left: 4%;
-                margin-right: 4%;
-            }
-
-            .timeline-point::before {
-                content: '';
-                height: 5px;
-                width: 4%;
-                background: white;
-                position: absolute;
-                margin-top: 8px;
-                left: 0;
-            }
-
-            .timeline-continue {
-                width: 5px;
-                height: 5px;
-                background-color: white;
-                position: relative;
-                margin-left: 5px;
-                margin-right: 5px;
-                margin-bottom: 25px;
-            }
-
-            .timeline-continue::before, .timeline-continue::after {
-                content: '';
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                background: white;
-            }
-
-            .timeline-continue::before {
-                top: 10px;
-            }
-
-            .timeline-continue::after {
-                top: 20px;
+            .vertical-center {
+                min-height: 100%;
+                display: flex;
+                align-items: center;
             }
 
             .list-link {
@@ -137,87 +73,16 @@
     </head>
     <body>
         <div class="row left-lean title">
-            <div class="col">
+            <div class="col vertical-center">
                 <img class="pull-left" src="./Me.png" alt="picture of me" width="128px" height="128px" style="border-radius: 100px;">
-            </div>
-            <div class="col">
                 <h1>Callum Miller-Weir</h1>
-                <h2 style="color: crimson;">CS Graduate</h2>
             </div>
         </div>
         <div class="row left-lean text">
-            <h3 class="title">Timeline</h3>
-            <div class="timeline" style="height: 50px;">
-                <div class="timeline-point">
-                    <h4 class="title">2012-2014</h4>
-                    <p class="timeline-indent-l1">Experience Gained: </p>
-                    <p class="timeline-indent-l2">Paper Round</p>
-                </div>
-            </div>
-            <div class="timeline-continue"></div>
-            <div class="timeline" style="height: 1250px;">
-                <div class="timeline-point">
-                    <h4 class="title">2016</h4>
-                    <p class="timeline-indent-l1">Experience Gained:</p>
-                    <p class="timeline-indent-l2">Work Experience at <a href="https://www.drpgroup.com/">DRP Group</a></p>
-                </div>
-                <div class="timeline-point">
-                    <h4 class="title">2017</h4>
-                    <p class="timeline-indent-l1">Qualifications Gained:</p>
-                    <p class="timeline-indent-l2">GCSE English Literature - 9</p>
-                    <p class="timeline-indent-l2">GCSE Maths - 9</p>
-                    <p class="timeline-indent-l2">GCSE Computer Science - A*</p>
-                    <p class="timeline-indent-l2">GCSE Physics - A*</p>
-                    <p class="timeline-indent-l2">GCSE Chemistry - A*</p>
-                    <p class="timeline-indent-l2">GCSE Music - A*</p>
-                    <p class="timeline-indent-l2">GCSE English Language - 7</p>
-                    <p class="timeline-indent-l2">GCSE Biology - A</p>
-                    <p class="timeline-indent-l2">GCSE Religious Studies - A</p>
-                    <p class="timeline-indent-l2">GCSE German - A</p>
-                    <p class="timeline-indent-l2">GCSE Business Studies and Economics - B</p>
-                    <p class="timeline-indent-l1">Experience Gained:</p>
-                    <p class="timeline-indent-l2">(Continued) Work Experience at <a href="https://www.drpgroup.com/">DRP Group</a></p>
-                </div>
-                <div class="timeline-point">
-                    <h4 class="title">2018</h4>
-                    <p class="timeline-indent-l1">Qualifications Gained:</p>
-                    <p class="timeline-indent-l2">A Level Maths - A*</p>
-                    <p class="timeline-indent-l1">Experience Gained:</p>
-                    <p class="timeline-indent-l2">Work Experience at <a href="http://www.cepha.co.uk/">Cepha Controls Limited</a></p>
-                </div>
-                <div class="timeline-point">
-                    <h4 class="title">2019</h4>
-                    <p class="timeline-indent-l1">Qualifications Gained:</p>
-                    <p class="timeline-indent-l2">A Level Computer Science - A</p>
-                    <p class="timeline-indent-l2">A Level Further Maths - B</p>
-                    <p class="timeline-indent-l2">A Level Physics - B</p>
-                    <p class="timeline-indent-l1">Enrolled on BSc Computer Science at <a href="https://www.leeds.ac.uk/">University of Leeds</a></p>
-                </div>
-                <div class="timeline-point">
-                    <h4 class="title">2020</h4>
-                    <p class="timeline-indent-l1">Experience Gained:</p>
-                    <p class="timeline-indent-l2">Internal Website Development for <a href="https://www.westmercia.police.uk/">West Mercia Police</a></p>
-                    <p class="timeline-indent-l1">Started 2nd Year at <a href="https://www.leeds.ac.uk/">University of Leeds</a></p>
-                </div>
-                <div class="timeline-point">
-                    <h4 class="title">2021</h4>
-                    <p class="timeline-indent-l1">Experience Gained:</p>
-                    <p class="timeline-indent-l2">Website Development (and Technical Support) for <a href="https://i-singchoirs.co.uk/">i-Sing Choirs</a></p>
-                    <p class="timeline-indent-l1">Started 3rd Year at <a href="https://www.leeds.ac.uk/">University of Leeds</a></p>
-                </div>
-                <div class="timeline-point">
-                    <h4 class="title">2022</h4>
-                    <p class="timeline-indent-l1">Qualifications Gained:</p>
-                    <p class="timeline-indent-l2">Graduated from <a href="https://www.leeds.ac.uk/">University of Leeds</a> with a BSc (Hons) in Computer Science</p>
-                    <p class="timeline-indent-l2">Classification: 1st</p>
-                </div>
-            </div>
-            <div class="timeline-continue"></div>
-
             <h3 class="title">Projects</h3>
             <h4 class="title">Ongoing Projects</h4>
             <ul>
-                <li><a href="https://github.com/CallumMiller-Weir/lesion-app">lesion-app</a><br>Mobile application using the HAM10000 skin lesion dataset.</li>
+                <li><a href="https://github.com/CallumMiller-Weir/lesion-app">lesion-app</a><br>A mobile application capable of "diagnosing" pictured skin lesions.</li>
                 <li><a href="https://github.com/CallumMiller-Weir/xv6-networking">xv6-networking</a><br>A simple network stack for the xv6 operating system.</li>
             </ul>
             <h4 class="title">Archived Projects</h4>
