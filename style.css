@@ -1,0 +1,64 @@
+@font-face {
+    font-family: DroidSerif;
+    src: url("./DroidSerif.ttf");
+}
+
+@font-face {
+    font-family: RobotoSlab;
+    src: url("./RobotoSlab-Regular.ttf");
+}
+
+* {
+    color: white;
+}
+
+body {
+    background: #2E2E2E;
+}
+
+img {
+    margin: 12px;
+}
+
+a {
+    color: crimson;
+}
+
+a:hover {
+    color: crimson;
+}
+
+.left-lean {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.title {
+    font-family: RobotoSlab;
+}
+
+.text {
+    font-family: DroidSerif;
+}
+
+.vertical-center {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.link-list {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.list-link {
+    background: crimson;
+    color: white;
+    padding: 1px;
+}
+
+.list-link:hover {
+    text-decoration: none;
+    color: white;
+}
