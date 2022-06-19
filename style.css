@@ -1,9 +1,4 @@
 @font-face {
-    font-family: DroidSerif;
-    src: url("./DroidSerif.ttf");
-}
-
-@font-face {
     font-family: RobotoSlab;
     src: url("./RobotoSlab-Regular.ttf");
 }
@@ -14,35 +9,39 @@
 
 body {
     background: #2E2E2E;
+    width: 100vw;
 }
 
 img {
     margin: 12px;
 }
 
-a {
-    color: crimson;
+.link-a {
+    color: #c8a881;
 }
 
-a:hover {
-    color: crimson;
+.link-a:hover {
+    color: white;
 }
 
-a:active {
-    color: crimson;
+.link-a:active {
+    color: #c8a881;
 }
 
-.left-lean {
-    margin-left: 5%;
-    margin-right: 5%;
+.link-b {
+    color: #C88380;
+}
+
+.link-b:hover {
+    color: white;
+}
+
+.link-b:active {
+    color: #C88380;
 }
 
 .title {
     font-family: RobotoSlab;
-}
-
-.text {
-    font-family: DroidSerif;
 }
 
 .vertical-center {
@@ -51,19 +50,13 @@ a:active {
     align-items: center;
 }
 
-.paragraph {
-    max-width: 500px;
-}
-
 .link-list {
     font-size: 18px;
     margin-bottom: 40px;
 }
 
 .list-link {
-    background: crimson;
-    color: white;
-    padding: 1px;
+    padding: 5px;
 }
 
 .list-link:hover {
